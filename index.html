@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>FTAGS Advisory Pvt. Ltd.</title>
+  <style>
+    /* Default styles */
+
+    /* Add your custom styles here */
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      /* Styles for screens smaller than 768px (e.g., mobile devices) */
+
+      /* Adjust the header styles */
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 150px;
+      }
+
+      nav {
+        margin-top: 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+
+      /* Adjust the section styles */
+      section {
+        padding: 50px 20px;
+      }
+
+      section h2 {
+        font-size: 24px;
+      }
+
+      /* Adjust the services container */
+      .services-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .service {
+        text-align: center;
+      }
+
+      /* Adjust the contact form styles */
+      .contact-form .form-group input,
+      .contact-form .form-group textarea {
+        width: 100%;
+      }
+
+      /* Adjust the contact info styles */
+      .contact-info img {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+      }
+
+      /* Adjust the footer styles */
+      footer {
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" style="background-image: url('images/back.png');">
+    <h1>Welcome to FTAGS Advisory Pvt. Ltd.</h1>
+    <p>We provide Financial solutions for you and your business.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </section>
+  
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service">
+        <img src="images/accounting.png" alt="Service 1">
+        <h3>Accounting</h3>
+        <p>Looking for accounting solution for your business contact us</p>
+      </div>
+      <div class="service">
+        <img src="images/taxation.png" alt="Service 2">
+        <h3>Taxation</h3>
+        <p>Looking for Income tax or Gst related service contact us</p>
+      </div>
+      <div class="service">
+        <img src="images/demat.png" alt="Service 3">
+        <h3>Demat Account</h3>
+        <p>Open your DEMAT account and start Investing with us. We are authorised partner of Kotak Securities Pvt Ltd </p>
+      </div>
+      <div class="service">
+        <img src="images/mf.png" alt="Service 4">
+        <h3>Mutual Fund</h3>
+        <p>We are distributor of mutual funds of various companies. Contact us if you are interested in investing</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to FTAGS Advisory Pvt. Ltd., a trusted partner for all your financial needs. We specialize in providing comprehensive accounting and taxation solutions to individuals and businesses. With our expertise and commitment to excellence, we ensure that your financial matters are handled efficiently and effectively.</p>
+  
+    <p>Our team of experienced professionals works closely with you to analyze your unique requirements and develop tailored solutions. Whether you are an individual seeking personal financial advice or a business looking for strategic financial planning, we have the expertise to guide you every step of the way.</p>
+  
+    <p>In addition to our accounting and taxation services, we offer expert guidance in mutual funds and stock market trading. If you are looking to start your investment journey, we are here to help you make informed decisions and maximize your returns.</p>
+  
+    <p>What sets us apart is our commitment to exceptional customer service. We believe in building long-term relationships with our clients based on trust, transparency, and integrity. Our dedicated team goes above and beyond to ensure that your financial needs are met with the highest level of professionalism and accuracy.</p>
+  
+    <p>Partner with FTAGS Advisory Pvt. Ltd. today and experience the peace of mind that comes with having a reliable financial partner by your side. Contact us to schedule a consultation and let us help you achieve your financial aspirations.</p>
+    <img src="images/about.png" width="100%" alt="">
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us today! Our team is here to answer any question you may have and help you with your financial needs.<br>Simply fill out the form below with your name, email, and message, and we'll be in touch shortly.</p>
+    <div class="contact-form">
+      <div class="form-group">
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Your Email">
+      </div>
+      <div class="form-group">
+        <label for="message"></label>
+        <textarea id="message" placeholder="Message"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Send</button>
+      </div>
+    </div>
+  </section>
+  <div class="contact-info">
+    <p><img src="images/phone.png">Call us: <a href="tel:9871293894">9871293894</a></p>
+    <p><img src="images/whatsapp.png">WhatsApp us: <a href="tel:9871293894">9871293894</a></p>
+    <p><img src="images/email.png">Email us: <a href="mailto:dalipbisht@live.in">dalipbisht@live.in</a></p>
+  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-fPN9+MdB6Bp2Sd1onIaLbJN41xozzNWuMzweXG7/mJQJ58g9hxPPh6V8nC/6/Z2LJlJe2rMhePLZuKu0yLxu3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <footer>
+    <p>&copy; 2023 FTAGS Advisory Pvt. Ltd. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+
+  // Email configuration
+  $to = 'ayushbisht66@gmail.com'; // Replace with your email address
+  $subject = 'New Contact Form Submission';
+  $headers = 'From: ' . $email . "\r\n" .
+             'Reply-To: ' . $email . "\r\n" .
+             'X-Mailer: PHP/' . phpversion();
+
+  // Compose the email body
+  $emailBody = "Name: $name\n\n";
+  $emailBody .= "Email: $email\n\n";
+  $emailBody .= "Message:\n$message";
+
+  // Send the email
+  if (mail($to, $subject, $emailBody, $headers)) {
+    echo 'Thank you! Your message has been sent.';
+  } else {
+    echo 'Oops! Something went wrong. Please try again later.';
+  }
+}
+?>
